@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flask-sqlalchemy-project"
+version = "0.1.0"
+description = "A simple Flask + SQLAlchemy starter project"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "Flask==3.0.3",
+    "Flask-SQLAlchemy==3.1.1",
+]
+
+# ✅ Tell setuptools what to package (include app, ignore instance)
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+exclude = ["instance*"]
+
+[tool.flask]
+app = "run.py"
+debug = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

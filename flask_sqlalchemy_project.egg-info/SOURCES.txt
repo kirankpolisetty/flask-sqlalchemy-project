@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+app/__init__.py
+app/config.py
+app/extensions.py
+app/models.py
+app/routes.py
+flask_sqlalchemy_project.egg-info/PKG-INFO
+flask_sqlalchemy_project.egg-info/SOURCES.txt
+flask_sqlalchemy_project.egg-info/dependency_links.txt
+flask_sqlalchemy_project.egg-info/requires.txt
+flask_sqlalchemy_project.egg-info/top_level.txt
